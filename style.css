@@ -1,10 +1,12 @@
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
     background-color: darkslategray;
+    text-align: center;;
 }
 
+/* Style the header */
 .header {
-    background-color: rgb(184, 153, 114);
+    background-color: rgb(148, 130, 109);
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 0;
@@ -18,6 +20,8 @@ body {
     align-items: center;
     overflow: hidden;
     position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Center the nav and spread out the links */
@@ -31,18 +35,31 @@ nav {
 /* Style the links */
 nav a {
   text-decoration: none;   /* removes underline */
-  color: rgb(184, 153, 114);       /* pick your bean-brown color */
+  color: rgb(148, 130, 109);       /* pick your bean-brown color */
   font-weight: bold;
   transition: color 0.2s;
 }
 
 /* Make sure visited links stay the same color */
 nav a:visited {
-  color: rgb(184, 153, 114);
+  color: rgb(148, 130, 109);
 }
 
 /* Hover effect so they feel clickable */
 nav a:hover {
-  color: #8b5e3c;          /* slightly lighter/darker shade */
+  color: rgb(116, 102, 85);          /* slightly lighter/darker shade */
 }
 
+.total-beans {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(148, 130, 109);
+    color: black;
+    box-shadow: 5px 5px 5px grey;
+    text-align: center;
+    font-weight: bold;
+}
