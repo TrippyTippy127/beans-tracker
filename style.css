@@ -4,6 +4,7 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+}
 
 /* Style the header */
 .header {
@@ -49,6 +50,16 @@ nav a:hover {
   color: rgb(116, 102, 85);          /* slightly lighter/darker shade */
 }
 
+.task-total-goals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+/* Style for the main header and total beans display */
 .total-beans {
     font-size: 2rem;
     display: inline-block;
@@ -91,7 +102,7 @@ nav a:hover {
   -moz-appearance: textfield;
 }
 
-.add-beans-button, .subtract-beans-button {
+.add-beans-button, .subtract-beans-button, .task-button {
     background-color: rgb(148, 130, 109);
     border: 2px solid black;
     border-radius: 10px;
@@ -104,7 +115,24 @@ nav a:hover {
     transition: background-color 0.2s, transform 0.1s;
 }
 
-.add-beans-button:hover, .subtract-beans-button:hover {
+.add-beans-button:hover, .subtract-beans-button:hover, .task-button:hover {
     background-color: rgb(116, 102, 85);
     transform: scale(1.05);
 }
+
+.task-buttons-section {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(131, 114, 95);
+    box-shadow: 5px 5px 5px black;
+}
+

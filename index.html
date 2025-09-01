@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beans Tracker</title>
     <link rel="stylesheet" href="style.css"> <!--- Always have your stylesheet in the same folder as the HTML file you're working on to avoid more steps. -->
-    <script src="script.js"></script> <!--- Always have your javascript file in the same folder as the HTML file you're working on to avoid more steps. -->
 </head>
 
   <body>
@@ -28,12 +27,44 @@
     <!-- Main Content Section -->
     <main>
         <section class="main-content">
-           
+        <div class="task-total-goals">   
+            <!-- Task Buttons -->
+            <section class="task-buttons-section">
+                <button class="task-button" data-beans="5">Take a Shower</button>
+                <button class="task-button" data-beans="5">Brush Teeth</button>
+                <button class="task-button" data-beans="10">Go to Work</button>
+                <button class="task-button" data-beans="15">Go to Therapy</button>
+                <button class="task-button" data-beans="3">Take Meds</button>
+                <button class="task-button" data-beans="10">Clean Something</button>
+                <button class="task-button" data-beans="10">Do Business Stuff</button>
+                <button class="task-button" data-beans="5">Walk Dogs</button>
+                <button class="task-button" data-beans="5">Feed Pets</button>
+                <button class="task-button" data-beans="5">Water Plants</button>
+                <button class="task-button" data-beans="10">Drive</button>
+                <button class="task-button" data-beans="3">Do a Craft</button>
+                <button class="task-button" data-beans="5">Finish a Craft</button>
+                <button class="task-button" data-beans="5">Read</button>
+            </section>
+                
+            <!-- Total Beans Display -->
             <section class="total-beans">
                 <h2>Total Beans: <div class="total-bean-count">0</div></h2>
             </section>
-        </section>
+            
+                <!-- Daily Goals Section -->
+            <section id="daily-goals">
+                <h2>Daily Goals</h2>
+  
+                <!-- Input area -->
+                <input type="text" id="goal-text" placeholder="Enter goal">
+                <input type="number" id="goal-beans" placeholder="Beans worth">
+                <button id="add-goal">Add Goal</button>
+                <button id="clear-goals">Clear Goals</button>
 
+                <!-- List of goals -->
+                <ul id="goal-list"></ul>
+            </section>
+        </div>
         <section class="manual-controls">
             <input type="number" class="bean-input" placeholder="Enter beans">
             <div class="manual-buttons">
@@ -41,6 +72,11 @@
                 <button class="subtract-beans-button">Subtract Beans</button>
             </div>
         </section>
+
+
+
+
     </main>
+    <script src="script.js"></script> <!--- Always have your javascript file in the same folder as the HTML file you're working on to avoid more steps. -->
   </body>
 </html>
