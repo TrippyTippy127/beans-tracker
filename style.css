@@ -1,25 +1,24 @@
 body {
     font-family: 'Trebuchet MS';
     background-color: darkslategray;
-    text-align: center;;
-}
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 
 /* Style the header */
 .header {
     background-color: rgb(148, 130, 109);
-    color: rgb(0, 0, 0);
+    color: darkslategray;
     text-align: center;
     margin: 0;
     padding: 0;
     border: 2px solid black;
     border-radius: 15px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    position: relative;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -59,7 +58,53 @@ nav a:hover {
     border-radius: 10px;
     background-color: rgb(148, 130, 109);
     color: black;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px black;
     text-align: center;
     font-weight: bold;
+}
+
+.bean-input {
+  background-color: rgb(148, 130, 109);   /* soft bean-beige, pick any solid color */
+  border: 1px solid #000;      /* thin black outline */
+  border-radius: 6px;          /* rounded corners */        /* space inside the box */
+  font-size: 1rem;             /* bigger text for readability */
+  outline: none;               /* removes that default blue glow */
+  width: 150px;                /* control how wide it looks */
+  text-align: center;          /* centers numbers inside */
+}
+
+/* Subtle highlight when typing */
+.bean-input:focus {
+  border-color: #5c4033;       /* bean-brown outline on focus */
+  background-color: #cfb9a7;     /* lighter while active */
+}
+
+/* Remove spinners in Chrome, Safari, Edge */
+.bean-input::-webkit-outer-spin-button,
+.bean-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove spinners in Firefox */
+.bean-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.add-beans-button, .subtract-beans-button {
+    background-color: rgb(148, 130, 109);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.add-beans-button:hover, .subtract-beans-button:hover {
+    background-color: rgb(116, 102, 85);
+    transform: scale(1.05);
 }
