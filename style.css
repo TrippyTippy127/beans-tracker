@@ -20,4 +20,29 @@ body {
     position: relative;
 }
 
+/* Center the nav and spread out the links */
+nav {
+  display: flex;
+  justify-content: center;  /* keeps them centered */
+  gap: 2rem;                /* space between links */
+  margin: 1rem 0;
+}
+
+/* Style the links */
+nav a {
+  text-decoration: none;   /* removes underline */
+  color: rgb(184, 153, 114);       /* pick your bean-brown color */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+/* Make sure visited links stay the same color */
+nav a:visited {
+  color: rgb(184, 153, 114);
+}
+
+/* Hover effect so they feel clickable */
+nav a:hover {
+  color: #8b5e3c;          /* slightly lighter/darker shade */
+}
 
